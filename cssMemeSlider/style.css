@@ -1,0 +1,73 @@
+* {
+    margin: 0 auto;
+}
+
+/* forum-regular - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/forum-v18-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+.wrapper_slider{
+    width: 1024px;
+    height: auto;
+    padding-top: 60px;
+    background-color: rgb(44, 41, 41);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider{
+    width: 600px;
+    height: 625px;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper-text{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.text{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    font-size: 30px;
+    font-weight: 600;
+    color: aliceblue;
+}
+
+.button{
+
+    display: flex;
+    justify-content: end;
+    
+}
+
+.btn{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    
+
+
+}
+
+.btn_slider{
+    width: 25px;
+    height: 25px;
+    
+    border: rgb(145, 176, 206);
+    color: rgb(145, 176, 206);
+    text-decoration: none;
+}
