@@ -51,6 +51,8 @@
 }
 
 .text{
+    height: 100px;
+    width: 700px;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 40px;
@@ -58,13 +60,20 @@
     font-size: 30px;
     font-weight: 600;
     color: aliceblue;
+    transform: all 2s;
 }
 
-.button{
+
+
+.buttons{
+    width: 200px;
+    height:40px;
     padding-top: 40px;
     padding-right: 10px;
     display: flex;
+    flex-direction: row;
     justify-content: end;
+    
     
 }
 
@@ -74,17 +83,57 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
-    
-
-
 }
 
 .btn_slider{
     width: 25px;
     height: 25px;
-    
-    border: rgb(145, 176, 206);
-    color: rgb(145, 176, 206);
-    text-decoration: none;
+    background-color: aliceblue;
+    border-radius: 15px;
+}
+
+.btn_slider.open{
+    background-color: transparent;
+    border: 3px solid aliceblue;
+    cursor: pointer;  
+ 
+}
+
+.btn_slider:active, .btn_slider:checked, .btn_slider:focus, .btn_slider:hover{
+    background-color: transparent;
+    border: 3px solid aliceblue;
+    cursor: pointer;
+}
+
+.btn:hover > .btn_slider, .btn:focus > .btn_slider, .btn:active > .btn_slider{
+    background-color: transparent;
+    border: 3px solid aliceblue;
+    cursor: pointer;  
+}
+
+
+
+
+/* adaptive */
+
+@media(max-width: 900px) {
+
+    .wrapper_slider{
+      width: 100vw;
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .wrapper-text{
+        width: 100wv;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .text{
+        width: 100wv;
+        height: auto;
+    }
 }
