@@ -15,7 +15,7 @@
     width: 1024px;
     height: auto;
     padding-top: 60px;
-    background-color: rgb(44, 41, 41);
+    background-color: rgb(114, 113, 113);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,7 +26,22 @@
     height: 625px;
     display: flex;
     align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+
+
 }
+
+.slider-line{
+    width: 2415px;
+    height: auto;
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+  }
 
 .wrapper-text{
     display: flex;
@@ -39,13 +54,15 @@
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 40px;
+    padding-top: 40px;
     font-size: 30px;
     font-weight: 600;
     color: aliceblue;
 }
 
 .button{
-
+    padding-top: 40px;
+    padding-right: 10px;
     display: flex;
     justify-content: end;
     
